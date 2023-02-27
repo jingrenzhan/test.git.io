@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <title>Be Healthy 建豐健康科技</title>
+    <link rel="shortcut Icon" type="image/x-icon" href="favicon.ico" />
+    <!--============================== css start ==============================-->
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="js/slick/slick.css" />
+    <link rel="stylesheet" href="css/partners.css" />
+    <!--<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/slick/slick.min.js"></script>
+    <script src="login.js"></script>
+
+</head>
+<body>
+    <div class="opicon-wrapper page-datas">
+        <header class="header"><!-- Load Ajax --></header>
+        <!-- Content -->
+        <div class="content-wrap">
+            <section class="section top-banner">
+                <div class="mask-wave loc-b"><span class="main wte wv"></span><span class="blu wv"></span><span class="grn wv"></span></div>
+                <div class="photo"><div class="mask-shadow"></div></div>
+                <div class="container">
+                    <h3 class="sub"><span class="f-cn">帳戶管理</span><span class="f-en">Account</span></h3>
+                </div>
+            </section>
+            <section class="section pnr-list">
+                <center>
+                    <div class="container">
+                       
+                            <div>
+                                <span>帳號</span>
+                                <input type="text" id="accountText" name="account" size="10" />
+                                <br /><br />
+                                <span>密碼</span>
+                                <input type="password"  id="passwordText" name="password" size="10" />
+                                <br /><br />
+
+                                <button type="button" runat="server" id="printbtn">登入</button>
+                            </div>
+                        
+                    </div>
+                </center>
+            </section>
+            <!-- Clear once it complete. -->
+        </div>
+        <!-- Footer -->
+        <footer class="footer"><!-- footer Ajax --></footer>
+    </div>
+    <script src="js/global.js"></script>
+    <script>
+    $(document).ready(function() {
+        $( "#features-tabs" ).tabs();
+
+        $('.solutions-main .item').on('click', function() {
+            if ( $(this).hasClass('on') ) {
+                $(this).removeClass('on');
+            } else {
+                $(this).addClass('on');
+            }
+        });
+        $('.slick-gifts').slick({
+            dots: true,
+            autoplay: true,
+            nextArrow: "#btnNext",
+            prevArrow: "#btnPrev"
+        });
+        //$('#printbtn').on('click',PressButton());
+    });
+    </script>
+</body>
+</html>
